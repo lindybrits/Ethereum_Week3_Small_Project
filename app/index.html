@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  	<title>Small Truffle Project</title>
+	  	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	  	<link href="./app.css" rel='stylesheet' type='text/css'>
+	  	<script src="./app.js"></script>
+	</head>
+	<body>
+	
+		<h1>Small Truffle Project - Lindy Brits</h1>
+		
+		<h3>Contract Information</h3>
+		
+		<table class="table">
+			<tr>
+				<td>Account</td>
+				<td>Balance</td>
+				<td>Address</td>
+			</tr>
+			<tr>
+				<td>Account A</td>
+				<td id="accABalance"></td>
+				<td id="accAAddress"></td>
+			</tr>
+			<tr>
+				<td>Account B</td>
+				<td id="accBBalance"></td>
+				<td id="accBAddress"></td>
+			</tr>
+		</table>
+		
+		<h3>Send ether</h3>
+		
+		<h5>From Account:</h5>
+		<input type="text" id="sender" placeholder="e.g., 0x93e66d9baea28c17d9fc393b53e3fbdd76899dae"></input>
+		
+		<div class="vspace-20"></div>
+		
+		<span class="span-message">
+			<strong>Account:</strong> <span id="senderAccount"></span>
+			<br>
+			You have <strong><span id="senderBalance"></span> ether</strong> in your account
+		</span>
+		
+		<h5>Amount:</h5>
+		<input type="text" id="amount" placeholder="e.g., 95"></input>
+		
+		<div class="vspace-20"></div>
+		
+		<button id="btnSend">Send ether</button>
+		
+		<div class="vspace-20"></div>
+		
+		<span class="span-message" id="status"></span>
+		
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+	</body>
+</html>
